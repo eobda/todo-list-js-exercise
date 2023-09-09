@@ -4,10 +4,18 @@
 
 // // Create a new task by adding to the arrays
 // // A new task will be created as incomplete
-// function newTask(title) {
-//   taskTitles.push(title);
-//   taskComplete.push(false);
-// }
+function newTask(title, description) {
+  // taskTitles.push(title);
+  // taskComplete.push(false);
+
+  const task = {
+    title: title,
+    description: description,
+    complete: false
+  };
+
+  return task;
+}
 
 // // Mark a task as complete by setting the task's status in the `taskComplete` array to `true`
 // function completeTask(taskIndex) {
@@ -20,17 +28,6 @@
 //   const complete = taskComplete[taskIndex];
 //   console.log(`${title} has${complete ? " " : " not "}been completed`);
 // }
-
-
-function newTask(title, description) {
-  const task = {
-    title: title,
-    description: description,
-    complete: false
-  };
-
-  return task;
-}
 
 // DRIVER CODE BELOW
 
